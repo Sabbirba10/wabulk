@@ -43,7 +43,10 @@ const getRecipientNumber = (mobileNo = "") => {
     mobileNo = mobileNo.slice(1);
   }
 
-  if (!mobileNo.startsWith("88") || mobileNo.length > 11) {
+  // If number starts with '1' and is 10 digits, prepend '880'
+  if (/^1\d{9}$/.test(mobileNo)) {
+    mobileNo = `880${mobileNo}`;
+  } else if (!mobileNo.startsWith("88") || mobileNo.length > 11) {
     mobileNo = `88${mobileNo}`;
   }
   return `${mobileNo}@c.us`;
