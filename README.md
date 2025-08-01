@@ -1,45 +1,68 @@
 # WABULK
 
-A small application that allows you to send dynamic WhatsApp messages to multiple recipients at once. This tool helps automate the process of sending personalized messages to a list of contacts, saving time and effort.
+WABULK is a Node.js application that allows you to send personalized WhatsApp messages to multiple recipients at once using [whatsapp-web.js](https://github.com/pedroslopez/whatsapp-web.js). This tool helps automate the process of sending dynamic messages to a list of contacts, saving you time and effort.
 
-## Features:
+## Features
 
-- **Bulk Messaging**: Send messages to multiple contacts simultaneously.
-- **Dynamic Templates**: Customize messages using dynamic placeholders.
-- **Easy Setup**: Simple steps to get started and run the app.
+- **Bulk Messaging**: Send messages to multiple contacts automatically.
+- **Dynamic Templates**: Personalize each message using contact details.
+- **Easy Setup**: Simple configuration and usage.
+- **QR Authentication**: Secure WhatsApp Web login via QR code.
 
-3. **Install Dependencies**:
+## Getting Started
 
-   ```bash
-   npm install
-   ```
+### 1. Clone the Repository
 
-   This will install all the necessary dependencies required to run the application.
+```bash
+git clone https://github.com/Sabbirba10/wabulk.git
+cd wabulk
+```
 
-4. **Add Your Contacts**:
+### 2. Install Dependencies
 
-   - Open the `contacts.json` file and add your contacts in the correct format. Make sure to include the phone numbers along with any other required details.
+```bash
+npm install
+```
 
-5. **Customize the Message Template**:
+### 3. Add Your Contacts
 
-   - Modify the message template as needed. Use placeholders for dynamic content to personalize each message.
+- Create a `contacts.json` file in the project root (see `src/ex.contacts.json` for an example).
+- Format:
+  ```json
+  [
+    {
+      "name": "Sabbir",
+      "number": "01865******"
+    }
+  ]
+  ```
 
-6. **Run the Application**:
+### 4. Customize the Message Template
 
-   ```bash
-   npm run start
-   ```
+- Edit the template in [`src/util.js`](src/util.js) inside the `getMessageTemplate` function to personalize your message.
 
-   This will start the application. It will prompt you to scan a QR code using WhatsApp Web to authorize the session.
+### 5. Run the Application
 
-7. **Scan the QR Code**:
+```bash
+npm start
+```
 
-   - Open WhatsApp on your phone, go to WhatsApp Web, and scan the QR code shown in your terminal to authenticate the session.
+- Scan the QR code with WhatsApp on your phone to authenticate.
 
-8. **Send Messages**:
-   - Once authenticated, the application will automatically start sending messages to your contacts based on the template.
+### 6. Messages Sent Automatically
 
-## Suggestions:
+- The app will send your customized message to each contact in your list.
 
-- **Ensure WhatsApp Web is open** on your browser before scanning the QR code to avoid restriction.
-- **Adjust the delay** between messages in case you're sending a large number to avoid rate-limiting from WhatsApp.
+## Notes
+
+- **Delay Between Messages**: The app waits a random interval between messages to avoid rate-limiting.
+- **Privacy**: Your WhatsApp credentials are stored locally and are not shared.
+- **Contacts File**: `contacts.json` is ignored by git for privacy.
+
+## License
+
+[ISC](LICENSE)
+
+---
+
+**Author:** Sabbir Bin Abbas
