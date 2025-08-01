@@ -43,7 +43,7 @@ const getRecipientNumber = (mobileNo = "") => {
     mobileNo = mobileNo.slice(1);
   }
 
-  if (!mobileNo.startsWith("88") || mobileNo.length > 10) {
+  if (!mobileNo.startsWith("88") || mobileNo.length > 11) {
     mobileNo = `88${mobileNo}`;
   }
   return `${mobileNo}@c.us`;
