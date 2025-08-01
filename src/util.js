@@ -23,11 +23,11 @@ On this blessed and joyful day, I pray that Allah fills your life with peace, pr
 May your heart be full of gratitude, your home be full of warmth, and your life be full of barakah. 🌸
 
 Let’s take a moment to forgive, love, and connect with those who matter. 💬
-As we enjoy delicious food 🍗🍛, wear new clothes 👗🧥, and share smiles 😊—let’s not forget those in need and continue spreading kindness. 🤍🌍
+As we enjoy delicious food 🍛, wear new clothes 👗, and share smiles 😊—let’s not forget those in need and continue spreading kindness. 🤍🌍
 
 May all your prayers be answered, and may this Eid be just the beginning of many more beautiful days to come. 🌟
 
-🎉 Stay happy, stay blessed, and enjoy every moment!
+Stay happy, stay blessed, and enjoy every moment! 🎉 
 
 Eid Mubarak once again, ${contact?.name}! 🕋
 
