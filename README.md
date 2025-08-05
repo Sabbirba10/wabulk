@@ -1,6 +1,6 @@
-# WABULK
+# WABulk
 
-WABULK is a Node.js application that allows you to send personalized WhatsApp messages to multiple recipients at once using [whatsapp-web.js](https://github.com/pedroslopez/whatsapp-web.js). This tool helps automate the process of sending dynamic messages to a list of contacts, saving you time and effort.
+WABulk is a Node.js application that allows you to send personalized WhatsApp messages to multiple recipients at once using [whatsapp-web.js](https://github.com/pedroslopez/whatsapp-web.js). This tool helps automate the process of sending dynamic messages to a list of contacts, saving you time and effort.
 
 ## Features
 
@@ -65,4 +65,4 @@ npm start
 
 ---
 
-**Author:** Sabbir Bin Abbas
+**Author:** [Sabbir Bin Abbas](https://github.com/sabbirba)
