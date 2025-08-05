@@ -14,7 +14,7 @@ WABULK is a Node.js application that allows you to send personalized WhatsApp me
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/Sabbirba10/wabulk.git
+git clone https://github.com/sabbirba/wabulk.git
 cd wabulk
 ```
 
